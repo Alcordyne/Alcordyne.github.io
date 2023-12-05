@@ -1,8 +1,8 @@
-body{
+body {
     margin: 0;
     padding:0;
     background: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;  
 }
 
 /*----------------MISSION STATEMENT SECTION----------------*/
@@ -33,6 +33,7 @@ img.logoImage {
 #NavBar {
     grid-area: NavBar;
     text-align: left;
+    margin-left: 40px;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -104,26 +105,37 @@ img.logoImage {
     font-size: 16px;
 }
 
-#SignUp {
+#signInButton {
     display: inline-block;
     margin-right: 10px;
-    width: 100px;
+    width: 200px;
     height: 40px;
     border: 2px solid #04724D;
-    background-color: #04724D;
+    background-color: transparent;
+    color: #04724D;
     text-align: center;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-#SignUp > a {
+#signInButton:hover {
+     background-color: #04724D;
+     color: white;
+}
+
+#signInButton > a {
     line-height: 40px;
-    vertical-align: middle;
     font-size: 16px;
-    text-align: center;
+    vertical-align: middle;
     text-decoration: none;
+    color: #04724D;
+    transition: color 0.3s;
+}
+
+#signInButton:hover > a {
     color: white;
 }
 
-#LogIn {
+#MyAccount {
     display: inline-block;
     margin-right: 10px;
     width: 100px;
@@ -131,14 +143,22 @@ img.logoImage {
     border: 2px solid #04724D;
     background-color: transparent;
     text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+#MyAccount:hover {
+    background-color: #04724D;
 }
 
-#LogIn > a {
+#MyAccount > a {
     line-height: 40px;
     font-size: 16px;
     vertical-align: middle;
     text-decoration: none;
     color: #04724D;
+    transition: color 0.3s;
+}
+#MyAccount:hover > a {
+    color: white;
 }
 
 #Search {
@@ -155,6 +175,11 @@ img.logoImage {
     border: 2px solid #04724D;
     background-color: #04724D;
     color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#Search:hover > button {
+    background-color: #005236;
 }
 
 #SearchInput {
@@ -174,172 +199,121 @@ img.logoImage {
     border: 1px solid #D5D8DE;
     background-color: #F2F4F8;
 }
+    
 
-/*----------FAQ Section Begins----------------*/
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-.faq{
+/*----------------MISSION STATEMENT SECTION----------------*/
+
+/*change content of the ENTIRE Our Mission area*/
+.mission{
     background-color: #F2F4F8;
     display: flex;
 }
-.faq-section {
-    max-width: 800px;
-    margin: 50px auto;
-    text-align: center;
-    background-color: #f2f4f8; /* Light grey background */
-    padding: 20px; /* Add padding for better visibility */
-    position: relative; /* Add position relative */
-    overflow: hidden; /* Ensure child elements don't overflow */
+
+/*change content of the unordered list area*/
+.missionStatement > ul{
+    list-style: disc;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 100%;
 }
 
-.faq-item {
-    width: calc(100% - 100px); /* Full width with padding adjustment */
-    margin-bottom: 20px;
+/*change content of the "Our Mission" header*/
+.missionStatement > h1{
+    font-size: 45px;
+    color: #04724D;
+    padding-left: 20px;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+/*change content of the Our Mission Message area (Our mission + statements)*/
+.missionStatement{
+   padding-left: 180px;
+   width: 50%;
+}
+
+/*change content of the "Our Mission" statement*/
+.missionStatement > ul > li{
+    margin-bottom: 25px;
+    width: 400px;
+}
+
+/*----------------Results----------------*/
+
+#results {
+    display: none; /* Initially hidden */
+    position: absolute;
+    z-index: 999; /* Search appears over other elements */
+    list-style-type: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #F2F4F8;
+}
+
+#results li {
+    margin-bottom: 10px;
+    padding: 8px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    transition: transform 0.3s ease; /* Add transition for a smoother effect */
+    background-color: White;
 }
 
-
-.faq-item.active h3 {
-    background-color: #F2F4F8;
-    color: black;
+#results a {
+    text-decoration: none;
+    color: DimGray;
 }
 
-
-.faq-item.active .answer {
-    display: block;
+#results a:hover {
+    text-decoration: underline;
 }
 
+/*----------------RESOURCES OFFERED SECTION (AT THE BOTTOM)----------------*/
 
-.faq-item h3 {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    margin: 0;
-    width: 90%;
-}
-
-
-.toggle-btn {
-    font-size: 20px;
-}
-
-
-.answer {
-    display: none;
-    padding: 10px;
-    background-color: #fff;
-    color: black;
-}
-.faq-section:after {
-    content: '';
-    display: table;
-    clear: both;
-    width: 100%; /* Full width to extend the background */
-}
-/* following rule for the .show class */
-.answer.show {
-    display: block;
-}
-
-
-
-/*----------FAQ Section Ends-----------------*/
-
-
-/*----------Guides Section Begins-------------*/
-.guide{
-    background-color: ;
-    display: flex;
-}
-.guideHeader > h1 {
+.resourceHeader > h1 {
     padding-top: 75px;
-    padding-bottom: 40px;
+    padding-bottom: 75px;
     font-size: 35px;
     text-align: center;
     margin: 0;
 }
-.guideHeader > p {
-    padding-top: 75px;
+
+#briefResources{
+    display: grid;
+    height: 15vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "House ForkKnife Briefcase Heart";
+    margin: 0 auto;
+    text-align: center;
     padding-bottom: 75px;
-    font-size: 25px;
-    text-align: center;
-    margin: 0;
-}
-.box-container{
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
-  margin-top: 100px;
-  margin-bottom: 40px;
-}
-.box{
-  height: 450px;
-  width: 350px;
-  background-color: white;
-  list-style-type: none;
-  border: 1px solid #dde1e6;
-  margin: auto;
-  display: block;
-  margin-bottom: 40px;
-  text-align: center;
-}
-.box img{
-  width: 100%;
-  height: 40%;
-}
-.box-content{
-  padding: 20px;
-}
-.box-content > h3{
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-.box-content > p{
-  font-size: 15px;
-  margin-bottom: 20px;
-}
-.bookmarkBtn {
-  cursor: pointer;
-  display: inline-block;
-  margin: auto;
-  margin-left: 5%;
-  height: 10%;
-  line-height:250%;
-  width: 40%;
-  border: 1px solid #dde1e6;
-  border-radius: 5px;
-  font-size:medium;
-  text-align: center;
-  background-color: #04724d;
-  color: white;
 }
 
-.moreInfoBtn {
-    cursor: pointer;
-    display: inline-block;
-    margin: auto;
-    margin-left: 5%;
-    height: 10%;
-    line-height:250%;
-    width: 40%;
-    font-size:medium;
-    text-align: center;
-    color: #04724d;
+#House {
+    grid-area: House;
+    margin: 0 auto;
+    width: 75%;
 }
-/*----------Guides Section Ends---------------*/
 
+#ForkKnife {
+    grid-area: ForkKnife;
+    margin: 0 auto;
+    width: 75%;
+}
+
+#Briefcase {
+    grid-area: Briefcase;
+    margin: 0 auto;
+    width: 75%;
+}
+
+#Heart {
+    grid-area: Heart;
+    margin: 0 auto;
+    width: 75%;
+}
 
 /*----------------Footer----------------*/
 

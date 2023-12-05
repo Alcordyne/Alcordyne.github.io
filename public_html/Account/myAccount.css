@@ -107,6 +107,10 @@ img.logoImage {
     border: 2px solid #04724D;
     background-color: transparent;
     text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+#MyAccount:hover {
+    background-color: #04724D;
 }
 
 #MyAccount > a {
@@ -115,8 +119,11 @@ img.logoImage {
     vertical-align: middle;
     text-decoration: none;
     color: #04724D;
+    transition: color 0.3s;
 }
-
+#MyAccount:hover > a {
+    color: white;
+}
 #Search {
     margin-top: auto;
     margin-bottom: auto;
@@ -131,6 +138,10 @@ img.logoImage {
     border: 2px solid #04724D;
     background-color: #04724D;
     color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+#Search:hover > button {
+    background-color: #005236;
 }
 
 #SearchInput {
@@ -162,6 +173,7 @@ img.logoImage {
   display: grid;
   grid-template-columns: repeat(2, 1fr);  
   background-color: #F2F4F8;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .tab {
@@ -172,6 +184,7 @@ img.logoImage {
   color: #555b61;
   text-decoration: underline;
   text-decoration-color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
 }
 .tab:hover {
     background-color: #ddd;
@@ -272,6 +285,7 @@ input {
 #moreInfoBtn {
     cursor: pointer;
     display: inline-block;
+    text-decoration: none;
     margin: auto;
     margin-left: 5%;
     height: 10%;
@@ -283,7 +297,8 @@ input {
 }
 #moreInfoBtn:hover {
   text-decoration: underline;
-  text-decoration-color: #04724d;
+  text-decoration-color: #005236;
+  color: #005236;
 }
 .tab-content > div {
   display: grid;

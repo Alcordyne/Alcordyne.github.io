@@ -12,13 +12,13 @@ body {
     grid-template-areas:
         "Title"
         "DropZipSearch"
-        "map";
+        "Map";
     margin: 0 auto;
 }
 
 #Title {
 /*    background-color: pink;*/
-    grid-area: Title; 
+    grid-area: Title;
 }
 
 h1 {
@@ -32,43 +32,14 @@ h1 {
 /*    background-color: yellow;*/
     grid-area: DropZipSearch;
     display: grid;
-    width: 700px;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
-        "dropDown zipCodeInput searchButton";
+        "zipCodeInput searchButton";
     padding: 25px;
     place-items: center;
     margin: 0 auto;
-}
-
-#map {
-/*    background-color: green;*/
-    grid-area: map;
-    text-align: center;
-    vertical-align: middle;
-}
-
-#Map > img {
-    width: 55%;
-    height: auto;
-}
-
-#dropDown {
-    grid-area: dropDown;
-    width: 175px;
-    height: 50px;
-}
-
-#dropdown {
-    width: 175px;
-    height: 50px;
-    background-color: #F2F4F8; 
-    font-size: 16px;
-    border: none;
-    margin: 0;
-    border: 1px solid #DDE1E6;
-    text-align: center;
 }
 
 #zipCodeInput {
@@ -77,7 +48,7 @@ h1 {
     height: 50px;
 }
 
-.zipCode {
+#userZipInput {
     font-size: 16px;
     width: 250px;
     height: 50px;
@@ -87,9 +58,19 @@ h1 {
     border: 1px solid #DDE1E6;
 }
 
-input.zipCode {
+input#userZipInput {
     padding: 0;
     height: 50px;
+}
+
+#map {
+/*    background-color: green;*/
+    grid-area: Map;
+    text-align: center;
+    vertical-align: middle;
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
 }
 
 #searchButton {
@@ -99,7 +80,7 @@ input.zipCode {
     place-items: center;
 }
 
-button#search {
+button#searchFB {
     font-size: 16px;
     width: 150px;
     height: 50px;
@@ -153,3 +134,51 @@ button#moreResults:hover {
     display: none;
 }
 
+
+#places {
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0px;
+}
+
+li {
+    min-height: 200px;
+    height: auto;
+    width: 300px;
+    background-color: white;
+    list-style-type: none;
+    border: 1px solid #dde1e6;
+    margin: auto;
+    display: block;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+li h3 {
+    padding: 5px;
+    height: 10%;
+    text-align: center;
+    font-weight: 600;
+    margin: auto;
+    margin-top: 5px;
+}
+
+li p {
+    padding: 5px;
+    height: 10%;
+    text-align: left;
+    font-weight: none;
+    margin: auto;
+    margin-top: 5px;
+}
+
+li a {
+    padding: 5px;
+    height: 10%;
+    text-align: center;
+    font-weight: 600;
+    margin: auto;
+    margin-top: 5px;
+    color:#04724D;
+}
