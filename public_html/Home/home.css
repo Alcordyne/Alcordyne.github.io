@@ -1,0 +1,311 @@
+body {
+    margin: 0;
+    padding:0;
+    background: white;
+    font-family: 'Roboto', sans-serif;  
+}
+
+/*----------------MISSION STATEMENT SECTION----------------*/
+nav {
+    display: grid;
+    height: 12vh;
+    grid-template-columns: 0.1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "Logo NavBar SearchAcc";
+    margin: 0 auto;
+}
+
+#Logo {
+    grid-area: Logo;
+    width: 300px;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+img.logoImage {
+    height: auto;
+    width: 300px;
+}
+
+#NavBar {
+    grid-area: NavBar;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navLinks{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.navLinks:hover{
+    color: #04724D;
+}
+
+#SearchAcc {
+    grid-area: SearchAcc;
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#Shelters {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+#Food {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+#Job {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+#Health {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+#FAQ {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+#SignUp {
+    display: inline-block;
+    margin-right: 10px;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #04724D;
+    background-color: #04724D;
+    text-align: center;
+}
+
+#SignUp > a {
+    line-height: 40px;
+    vertical-align: middle;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+#LogIn {
+    display: inline-block;
+    margin-right: 10px;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #04724D;
+    background-color: transparent;
+    text-align: center;
+}
+
+#LogIn > a {
+    line-height: 40px;
+    font-size: 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #04724D;
+}
+
+#Search {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#Search > button {
+    width: 75px;
+    height: 32px;
+    font-size: 16px;
+    border: 2px solid #04724D;
+    background-color: #04724D;
+    color: white;
+}
+
+#SearchInput {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#SearchInput > input {
+    padding: 0;
+    padding-left: 5px;
+    margin: 0;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid #D5D8DE;
+    background-color: #F2F4F8;
+}
+
+/*----------------MISSION STATEMENT SECTION----------------*/
+
+/*change content of the ENTIRE Our Mission area*/
+.mission{
+    background-color: #F2F4F8;
+    display: flex;
+}
+
+/*change content of the unordered list area*/
+.missionStatement > ul{
+    list-style: disc;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 100%;
+}
+
+/*change content of the "Our Mission" header*/
+.missionStatement > h1{
+    font-size: 45px;
+    color: #04724D;
+    padding-left: 20px;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+/*change content of the Our Mission Message area (Our mission + statements)*/
+.missionStatement{
+   padding-left: 180px;
+   width: 50%;
+}
+
+/*change content of the "Our Mission" statement*/
+.missionStatement > ul > li{
+    margin-bottom: 25px;
+    width: 400px;
+}
+
+/*----------------Results----------------*/
+
+#results {
+    display: none; /* Initially hidden */
+    position: absolute;
+    z-index: 999; /* Search appears over other elements */
+    list-style-type: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #F2F4F8;
+}
+
+#results li {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: White;
+}
+
+#results a {
+    text-decoration: none;
+    color: DimGray;
+}
+
+#results a:hover {
+    text-decoration: underline;
+}
+
+/*----------------RESOURCES OFFERED SECTION (AT THE BOTTOM)----------------*/
+
+.resourceHeader > h1 {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+}
+
+#briefResources{
+    display: grid;
+    height: 15vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "House ForkKnife Briefcase Heart";
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+#House {
+    grid-area: House;
+    margin: 0 auto;
+    width: 75%;
+}
+
+#ForkKnife {
+    grid-area: ForkKnife;
+    margin: 0 auto;
+    width: 75%;
+}
+
+#Briefcase {
+    grid-area: Briefcase;
+    margin: 0 auto;
+    width: 75%;
+}
+
+#Heart {
+    grid-area: Heart;
+    margin: 0 auto;
+    width: 75%;
+}
+
+/*----------------Footer----------------*/
+
+/*changes background of footer*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #666; 
+    color: #fff; 
+    padding: 20px 0; 
+    text-align: center;
+    margin-top: auto;
+}
+
+/*centers footer*/
+.footer-content {
+    max-width: 500px; 
+    margin: 0 auto; 
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Helping Hands</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+        
+    </head>
+    
+    <body>
+        <!--Navigation Bar-->
+        <nav>
+            <div id="Logo"><a href="home.html"><img class="logoImage" src="../Image/Helping Hands New Logo 3.png" alt="Hands holding up a house"></a></div>
+            <div id="NavBar">
+                <div id="Shelters"><a href="../Shelter/shelters.html" class="navLinks">Shelters</a></div>
+                <div id="Food"><a href="../Foodbank/foodBanks.html" class="navLinks">Food Banks</a></div>
+                <div id="Job"><a href="../Job/jobAssistance.html" class="navLinks">Job Assistance</a></div>
+                <div id="Health"><a href="../Healthcare/healthcare.html" class="navLinks">Healthcare</a></div>
+                <div id="FAQ"><a href="../FAQ/FAQGuides.html" class="navLinks">FAQ & Guides</a></div>
+            </div>
+            <div id="SearchAcc">
+                <div id="SearchInput"><input type="text" id="searchInput" placeholder="Search for..."></div>
+                <div id="Search"><button onclick="performSearch()">Search</button></div>
+                <ul id="results"></ul>
+                <div id="LogIn"><a href="../Account/logIn.html">Log In</a></div>
+                <div id="SignUp"><a href="../Account/signUp.html">Sign Up</a></div>
+            </div>
+
+            <script src="../Function/search.js"></script>
+        </nav>
+        <!--END of Navigation Bar-->
+        
+        <!--Mission Statement Section-->
+        <div class="mission">
+            <div class="missionStatement">
+                <h1>Our Mission</h1>
+                
+                <ul>
+                    <li>Our steady commitment is to serve the Sacramento area with a compassionate and steady helping hand in times of adversity.</li>
+                    <li>We take pride in being a reliable source of support, ensuring that our community can always rely on us when they need assistance during difficult times.</li>
+                </ul>
+            </div>
+
+            <img src="../Image/MissionPhotoofHands.jpg" alt="A group of people in a circle placing their hands together in the middle.">
+        </div>
+        <!--END of Mission Statement Section-->
+        
+        <div class="resourceHeader">
+            <h1>We offer many resources when it comes to your needs</h1>
+        </div>
+            <div id="briefResources">
+                <div id="House">
+                    <a><img src="../Image/home-sharp.png" alt="House"></a>
+                    <p>Choose the best shelter that suits your needs.</p>
+                </div>
+                <div id="ForkKnife">
+                    <a><img src="../Image/restaurant-sharp.png" alt="Fork and knife"></a>
+                    <p>Local food banks and hot meal options.</p>
+                </div>
+                <div id="Briefcase">
+                    <a><img src="../Image/briefcase-sharp.png" alt="Briefcase"></a>
+                    <p>Resume support and the best practices to get a job.</p>
+                </div>
+                <div id="Heart">
+                    <a><img src="../Image/fitness-sharp.png" alt="Heart"></a>
+                    <p>Healthcare clinics that provide no-cost help.</p>
+                </div>
+        </div>
+        <!--Footer-->
+        <footer>
+            <div class="footer-content">
+            <p>Helping Hands @ 2023. All rights reserved.</p>
+        </div>
+        </footer>
+        <!--END of Footer-->
+    </body>
+    
+</html>

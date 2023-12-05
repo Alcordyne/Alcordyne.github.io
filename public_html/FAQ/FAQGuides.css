@@ -1,0 +1,358 @@
+body{
+    margin: 0;
+    padding:0;
+    background: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*----------------MISSION STATEMENT SECTION----------------*/
+nav {
+    display: grid;
+    height: 12vh;
+    grid-template-columns: 0.1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "Logo NavBar SearchAcc";
+    margin: 0 auto;
+}
+
+#Logo {
+    grid-area: Logo;
+    width: 300px;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+img.logoImage {
+    height: auto;
+    width: 300px;
+}
+
+#NavBar {
+    grid-area: NavBar;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navLinks{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.navLinks:hover{
+    color: #04724D;
+}
+
+#SearchAcc {
+    grid-area: SearchAcc;
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#Shelters {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+#Food {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+#Job {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+#Health {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+#FAQ {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+#SignUp {
+    display: inline-block;
+    margin-right: 10px;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #04724D;
+    background-color: #04724D;
+    text-align: center;
+}
+
+#SignUp > a {
+    line-height: 40px;
+    vertical-align: middle;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+#LogIn {
+    display: inline-block;
+    margin-right: 10px;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #04724D;
+    background-color: transparent;
+    text-align: center;
+}
+
+#LogIn > a {
+    line-height: 40px;
+    font-size: 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #04724D;
+}
+
+#Search {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#Search > button {
+    width: 75px;
+    height: 32px;
+    font-size: 16px;
+    border: 2px solid #04724D;
+    background-color: #04724D;
+    color: white;
+}
+
+#SearchInput {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#SearchInput > input {
+    padding: 0;
+    padding-left: 5px;
+    margin: 0;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid #D5D8DE;
+    background-color: #F2F4F8;
+}
+
+/*----------FAQ Section Begins----------------*/
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.faq{
+    background-color: #F2F4F8;
+    display: flex;
+}
+.faq-section {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #f2f4f8; /* Light grey background */
+    padding: 20px; /* Add padding for better visibility */
+    position: relative; /* Add position relative */
+    overflow: hidden; /* Ensure child elements don't overflow */
+}
+
+.faq-item {
+    width: calc(100% - 100px); /* Full width with padding adjustment */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease; /* Add transition for a smoother effect */
+}
+
+
+.faq-item.active h3 {
+    background-color: #F2F4F8;
+    color: black;
+}
+
+
+.faq-item.active .answer {
+    display: block;
+}
+
+
+.faq-item h3 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0;
+    width: 90%;
+}
+
+
+.toggle-btn {
+    font-size: 20px;
+}
+
+
+.answer {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    color: black;
+}
+.faq-section:after {
+    content: '';
+    display: table;
+    clear: both;
+    width: 100%; /* Full width to extend the background */
+}
+/* following rule for the .show class */
+.answer.show {
+    display: block;
+}
+
+
+
+/*----------FAQ Section Ends-----------------*/
+
+
+/*----------Guides Section Begins-------------*/
+.guide{
+    background-color: ;
+    display: flex;
+}
+.guideHeader > h1 {
+    padding-top: 75px;
+    padding-bottom: 40px;
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+}
+.guideHeader > p {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+}
+.box-container{
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+.box{
+  height: 450px;
+  width: 350px;
+  background-color: white;
+  list-style-type: none;
+  border: 1px solid #dde1e6;
+  margin: auto;
+  display: block;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.box img{
+  width: 100%;
+  height: 40%;
+}
+.box-content{
+  padding: 20px;
+}
+.box-content > h3{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.box-content > p{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.bookmarkBtn {
+  cursor: pointer;
+  display: inline-block;
+  margin: auto;
+  margin-left: 5%;
+  height: 10%;
+  line-height:250%;
+  width: 40%;
+  border: 1px solid #dde1e6;
+  border-radius: 5px;
+  font-size:medium;
+  text-align: center;
+  background-color: #04724d;
+  color: white;
+}
+
+.moreInfoBtn {
+    cursor: pointer;
+    display: inline-block;
+    margin: auto;
+    margin-left: 5%;
+    height: 10%;
+    line-height:250%;
+    width: 40%;
+    font-size:medium;
+    text-align: center;
+    color: #04724d;
+}
+/*----------Guides Section Ends---------------*/
+
+
+/*----------------Footer----------------*/
+
+/*changes background of footer*/
+footer {
+    background-color: #666; 
+    color: #fff; 
+    padding: 20px 0; 
+    text-align: center;
+}
+
+/*centers footer*/
+.footer-content {
+    max-width: 500px; 
+    margin: 0 auto; 
+}

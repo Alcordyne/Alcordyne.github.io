@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    display: grid;
+    height: 12vh;
+    grid-template-columns: 0.1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "Logo NavBar SearchAcc";
+    margin: 0 auto;
+}
+#Logo {
+    grid-area: Logo;
+    width: 300px;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+img.logoImage {
+    height: auto;
+    width: 300px;
+}
+#NavBar {
+    grid-area: NavBar;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navLinks{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.navLinks:hover{
+    color: #04724D;
+}
+
+#SearchAcc {
+    grid-area: SearchAcc;
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#Shelters {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+#Food {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+#Job {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+#Health {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+#FAQ {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+#MyAccount {
+    display: inline-block;
+    margin-right: 10px;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #04724D;
+    background-color: transparent;
+    text-align: center;
+}
+
+#MyAccount > a {
+    line-height: 40px;
+    font-size: 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #04724D;
+}
+
+#Search {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#Search > button {
+    width: 75px;
+    height: 32px;
+    font-size: 16px;
+    border: 2px solid #04724D;
+    background-color: #04724D;
+    color: white;
+}
+
+#SearchInput {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#SearchInput > input {
+    padding: 0;
+    padding-left: 5px;
+    margin: 0;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid #D5D8DE;
+    background-color: #F2F4F8;
+}
+.container {
+  width: 80%;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 120px;
+  background-color: #ffffff;
+}
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+  background-color: #F2F4F8;
+}
+
+.tab {
+  text-align: center;
+  padding: 15px 0;
+  cursor: pointer;
+  font-weight: 600;
+  color: #555b61;
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+}
+.tab:hover {
+    background-color: #ddd;
+}
+.tabs .tab.active {
+  background-color: #04724D;
+  color: #ffffff;
+}
+.tab-content {
+  background-color: #ffffff;
+  padding: 50px 40px;
+  border: 1px solid #04724D;
+  display: none;
+}
+.user-info > h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #000224;
+  font-weight: 600;
+}
+ .user-info {
+     grid-template-areas:
+        "First"
+        "Last"
+        "Email";
+ }
+.resources {
+     grid-template-areas:
+    "Resource1"
+    "Resource2"
+    "Resource3";
+ }
+input {
+    font-size: 16px;
+    width: 99%;
+    height: 35px;
+    border: 0;
+    border-bottom: 1px solid #D5D8DE;
+    background-color: #F2F4F8;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.resource-section {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+.resource-section > h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #000224;
+  font-weight: 600;
+}
+#jrTitle {
+  font-size: 50px;
+  margin: auto;
+  width: 35%;
+  padding: 5%;
+  text-align: center;
+}
+
+#jrList {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 0px;
+}
+
+#jrElement {
+  height: 400px;
+  width: 300px;
+  background-color: white;
+  list-style-type: none;
+  border: 1px solid #dde1e6;
+  margin: auto;
+  display: block;
+  margin-bottom: 40px;
+  text-align: center;
+}
+#jrElementTitle {
+  padding: 5px;
+  height: 10%;
+  text-align: center;
+  font-weight: 600;
+  margin: auto;
+  margin-top: 5px;
+}
+
+#jrDescription {
+  margin: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 30%;
+  text-align: left;
+}
+#moreInfoBtn {
+    cursor: pointer;
+    display: inline-block;
+    margin: auto;
+    margin-left: 5%;
+    height: 10%;
+    line-height:250%;
+    width: 40%;
+    font-size:medium;
+    text-align: center;
+    color: #04724d;
+}
+#moreInfoBtn:hover {
+  text-decoration: underline;
+  text-decoration-color: #04724d;
+}
+.tab-content > div {
+  display: grid;
+  gap: 10px;
+padding: 20px;
+}
+.active {
+  display: block;
+}
+
